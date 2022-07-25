@@ -54,11 +54,12 @@ public class LambdaNetworkingStackTests
         LambdaNetworkingStackProps props
     )
     {
-        static object GetAssociationEip(IDictionary<string, IDictionary<string, object>> resources, int index)
+        static (object, object) GetAssociationEip(IDictionary<string, IDictionary<string, object>> resources, int index)
         {
             var firstAssociation = resources.ElementAt(index).Value;
             dynamic firstAssociationProps = firstAssociation["Properties"];
-            return firstAssociationProps["EIP"]["Ref"];
+            var att = firstAssociationProps["AllocationId"]["Fn::GetAtt"];
+            return (att[0], att[1]);
         }
 
         props.NetworkInterfaceIds = new[] { networkInterface1, networkInterface2 };
@@ -66,11 +67,13 @@ public class LambdaNetworkingStackTests
         var template = Template.FromStack(stack);
         var associations = template.FindResources("AWS::EC2::EIPAssociation");
 
-        var eip1 = GetAssociationEip(associations, 0);
+        var (eip1, att1) = GetAssociationEip(associations, 0);
         eip1.Should().Be("LambdaElasticIP0");
+        att1.Should().Be("AllocationId");
 
-        var eip2 = GetAssociationEip(associations, 1);
+        var (eip2, att2) = GetAssociationEip(associations, 1);
         eip2.Should().Be("LambdaElasticIP1");
+        att2.Should().Be("AllocationId");
     }
 
     [Test, Auto]
