@@ -58,7 +58,6 @@ jobs:
     uses: cythral/cfn-lambda-networking/.github/workflows/deploy.yml@master
     needs:
       - build
-      - start-dev-db
     with:
       environment: Development
     secrets:
