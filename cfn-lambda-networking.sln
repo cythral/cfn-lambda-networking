@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{635E0ADC-BE09-4BB1-BCAF-0BE8D6932BA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cythral.CloudFormation.LambdaNetworking", "src\Cythral.CloudFormation.LambdaNetworking\Cythral.CloudFormation.LambdaNetworking.csproj", "{2E02490B-1B18-45EA-BFE1-22AB9EF298D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "tests\Tests.csproj", "{E9C44347-D829-4B94-988C-CE3C1B99A07E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cicd", "cicd", "{238830DD-7217-4FF9-99FA-6E337FFB21A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cicd.DeployDriver", "cicd\Cicd.DeployDriver\Cicd.DeployDriver.csproj", "{06C8264E-B5C3-42C0-9295-E773CE5E8224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E02490B-1B18-45EA-BFE1-22AB9EF298D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E02490B-1B18-45EA-BFE1-22AB9EF298D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E02490B-1B18-45EA-BFE1-22AB9EF298D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E02490B-1B18-45EA-BFE1-22AB9EF298D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C44347-D829-4B94-988C-CE3C1B99A07E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C44347-D829-4B94-988C-CE3C1B99A07E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C44347-D829-4B94-988C-CE3C1B99A07E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C44347-D829-4B94-988C-CE3C1B99A07E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C8264E-B5C3-42C0-9295-E773CE5E8224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C8264E-B5C3-42C0-9295-E773CE5E8224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C8264E-B5C3-42C0-9295-E773CE5E8224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C8264E-B5C3-42C0-9295-E773CE5E8224}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E02490B-1B18-45EA-BFE1-22AB9EF298D9} = {635E0ADC-BE09-4BB1-BCAF-0BE8D6932BA0}
+		{06C8264E-B5C3-42C0-9295-E773CE5E8224} = {238830DD-7217-4FF9-99FA-6E337FFB21A9}
+	EndGlobalSection
+EndGlobal

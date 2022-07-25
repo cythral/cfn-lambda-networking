@@ -1,0 +1,1 @@
+Enables public internet networking support for AWS Lambdas by attaching an elastic IP address to each Lambda ENI.
