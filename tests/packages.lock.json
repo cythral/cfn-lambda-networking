@@ -112,23 +112,23 @@
       },
       "AWSSDK.CloudFormation": {
         "type": "Transitive",
-        "resolved": "3.7.11.7",
-        "contentHash": "HufJjxZ1kiZY0yy5kJL9EiSkyIVlc7bLX+ZOni0Y6LukqYI69n3YHJZ6VeuC3FQvLg3wcG5aoemlT+ZN6rLULQ==",
+        "resolved": "3.7.11.45",
+        "contentHash": "Lk/I87XIrlfJtp9lvDVvVuXh776fPx5YhkZRokvNZ6fk6CFZghErRcA4Xdv7jJP+H0pavkuOGAJxmWEJ4uPoHw==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.12, 4.0.0)"
+          "AWSSDK.Core": "[3.7.13.20, 4.0.0)"
         }
       },
       "AWSSDK.Core": {
         "type": "Transitive",
-        "resolved": "3.7.12.12",
-        "contentHash": "nuPbGcXzY9dWtsRwzqzrqyLjqMwiCSBeLyUwd8T2bYtpPyvdZISffSTRecjkwPyCa33+q0qjKLZKtsu8LkDl0w=="
+        "resolved": "3.7.13.20",
+        "contentHash": "32XGf7RG2gg32yxEniY32KBP32caIoWWnqMJ7vzw0XpeAUkyvZujW1+okAxtSBjYnZCk6pNHI3qu1HaUc+63qg=="
       },
       "AWSSDK.EC2": {
         "type": "Transitive",
-        "resolved": "3.7.79",
-        "contentHash": "R2gQCX5q6BJuOdTdAtPDxq3hdG1BmqyW9Ji5zfO4Ok45Qly0ku3Ru3rCKEwLniUglQfnb5U3WZ0OaBX4fD8Log==",
+        "resolved": "3.7.95.4",
+        "contentHash": "CkRyvr1Mfr8k6+kIQB5EkmoWVFgS9XgFR3Z9R/XzCqFtf4hCGG4IQvQVwq7CnCELIw36OI0Iahyj1BD4DcoIFg==",
         "dependencies": {
-          "AWSSDK.Core": "[3.7.12.12, 4.0.0)"
+          "AWSSDK.Core": "[3.7.13.20, 4.0.0)"
         }
       },
       "Castle.Core": {
@@ -839,8 +839,8 @@
       "cythral.cloudformation.lambdanetworking": {
         "type": "Project",
         "dependencies": {
-          "AWSSDK.CloudFormation": "3.7.11.7",
-          "AWSSDK.EC2": "3.7.79",
+          "AWSSDK.CloudFormation": "3.7.11.45",
+          "AWSSDK.EC2": "3.7.95.4",
           "Amazon.CDK.Lib": "2.33.0",
           "Constructs": "10.0.99"
         }
