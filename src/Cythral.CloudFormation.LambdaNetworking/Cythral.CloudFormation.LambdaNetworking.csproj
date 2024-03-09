@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-        <PackageReference Include="Amazon.CDK.Lib" Version="2.33.0" />
+        <PackageReference Include="Amazon.CDK.Lib" Version="2.132.0" />
         <PackageReference Include="Constructs" Version="10.0.99" />
     </ItemGroup>
 
